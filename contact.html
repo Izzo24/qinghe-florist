@@ -38,12 +38,16 @@
 }
 </script>
 <style>
+/* —— Contact page styles —— */
+
 .contact-layout {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 56px;
   align-items: start;
 }
+
+/* Form panel */
 .form-panel {
   background: white;
   border-radius: var(--radius-xl);
@@ -71,7 +75,10 @@
   gap: 18px;
 }
 .btn-full { width: 100%; justify-content: center; margin-top: 8px; padding: 18px; font-size: 1rem; }
+
+/* Info panel */
 .info-panel { display: flex; flex-direction: column; gap: 20px; }
+
 .contact-card {
   background: white;
   border-radius: var(--radius-lg);
@@ -105,6 +112,7 @@
 .contact-card-body strong { color: var(--text); }
 .contact-card-body a { color: var(--primary); font-weight: 600; transition: color var(--transition); }
 .contact-card-body a:hover { color: var(--primary-dark); }
+
 .line-badge {
   display: inline-flex;
   align-items: center;
@@ -118,6 +126,7 @@
   margin-top: 6px;
   font-family: 'Noto Sans TC', sans-serif;
 }
+
 .hours-grid {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -128,6 +137,7 @@
 .hours-day { color: var(--text-mid); }
 .hours-time { color: var(--primary); font-weight: 600; }
 .hours-closed { color: var(--rose); font-weight: 600; }
+
 .wedding-info-box {
   background: linear-gradient(135deg, var(--rose-pale) 0%, #fdf4f5 100%);
   border: 2px solid var(--rose-light);
@@ -150,6 +160,8 @@
   font-family: 'Noto Sans TC', sans-serif;
   line-height: 1.8;
 }
+
+/* Response badge */
 .response-badge {
   display: flex;
   align-items: center;
@@ -162,6 +174,8 @@
 .response-badge-icon { font-size: 1.3rem; }
 .response-badge-text { font-size: 0.84rem; color: var(--primary-dark); font-family: 'Noto Sans TC', sans-serif; }
 .response-badge-text strong { display: block; font-weight: 700; }
+
+/* FAQ */
 .faq-section { background: var(--bg-alt); }
 .faq-list { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
 .faq-item {
@@ -209,6 +223,7 @@
   padding: 0 28px;
 }
 .faq-item.open .faq-answer { max-height: 300px; padding: 0 28px 22px; }
+
 @media (max-width: 900px) {
   .contact-layout { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
@@ -219,15 +234,19 @@
 </style>
 </head>
 <body>
+
+<!-- Page Loader -->
 <div class="page-loader">
-  <div class="loader-flower">🌸</div>
+  <div class="loader-flower"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="display:inline-block;vertical-align:middle"><circle cx="12" cy="12" r="3" fill="currentColor"/><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3-3zM12 19a3 3 0 0 0 3 3 3 3 0 0 0-3-3zM2 12a3 3 0 0 0 3 3 3 3 0 0 0-3-3zM19 12a3 3 0 0 0 3-3 3 3 0 0 0-3 3z"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="6.5" r="2.5"/></svg></div>
   <div class="loader-text">載入中</div>
 </div>
+
+<!-- Navigation -->
 <nav class="site-nav">
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <div class="nav-logo-icon">🌿</div>
+        <div class="nav-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="display:inline-block;vertical-align:middle"><path d="M17 8C8 10 5.9 16.17 3.82 19.66A1 1 0 0 0 4.64 21c7.31-.42 13.36-4.85 13.36-13v-1.34l-1-1z"/><path d="M3 21c0-5.33 4-10.67 8-13"/></svg></div>
         <div class="nav-logo-text">
           <span class="nav-logo-name">青禾花藝</span>
           <span class="nav-logo-sub">Qinghe Floral Arts</span>
@@ -245,6 +264,8 @@
     </div>
   </div>
 </nav>
+
+<!-- Mobile Nav -->
 <nav class="nav-mobile">
   <button class="nav-mobile-close">✕</button>
   <a href="index.html" class="nav-link">首頁</a>
@@ -254,6 +275,8 @@
   <a href="contact.html" class="nav-link active">聯絡訂購</a>
   <a href="contact.html" class="btn btn-primary">立即訂花</a>
 </nav>
+
+<!-- Page Hero -->
 <section class="page-hero">
   <div class="container">
     <div class="page-hero-content reveal">
@@ -263,12 +286,17 @@
     </div>
   </div>
 </section>
+
+<!-- Contact Main -->
 <section style="padding: clamp(72px, 9vw, 120px) 0;">
   <div class="container">
     <div class="contact-layout">
+
+      <!-- Order Form -->
       <div class="form-panel reveal">
-        <div class="form-panel-title">填寫訂購需求 🌸</div>
+        <div class="form-panel-title">填寫訂購需求</div>
         <div class="form-panel-sub">請詳細描述您的需求，讓我們為您準備最適合的花藝提案。所有欄位填寫越完整，我們越能迅速為您提供精準報價。</div>
+
         <form id="order-form" novalidate>
           <div class="form-row">
             <div class="form-group">
@@ -280,20 +308,22 @@
               <input type="tel" id="phone" name="phone" class="form-control" placeholder="09xx-xxx-xxx" required>
             </div>
           </div>
+
           <div class="form-group">
             <label class="form-label" for="email">Email 信箱</label>
             <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com">
           </div>
+
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="service-type">花藝類型 <span style="color:var(--rose)">*</span></label>
               <select id="service-type" name="service-type" class="form-control" required>
                 <option value="" disabled selected>請選擇服務類型</option>
-                <option value="wedding">💒 婚禮花藝</option>
-                <option value="seasonal">🎁 節日花束</option>
-                <option value="corporate">🏢 企業花禮</option>
-                <option value="space">🏨 空間佈置</option>
-                <option value="course">🎨 花藝課程</option>
+                <option value="wedding">婚禮花藝</option>
+                <option value="seasonal">節日花束</option>
+                <option value="corporate">企業花禮</option>
+                <option value="space">空間佈置</option>
+                <option value="course">花藝課程</option>
                 <option value="other">✦ 其他</option>
               </select>
             </div>
@@ -302,6 +332,7 @@
               <input type="date" id="event-date" name="event-date" class="form-control">
             </div>
           </div>
+
           <div class="form-group">
             <label class="form-label" for="budget">預算範圍</label>
             <select id="budget" name="budget" class="form-control">
@@ -312,22 +343,36 @@
               <option value="8000+">NT$8,000 以上</option>
             </select>
           </div>
+
           <div class="form-group">
             <label class="form-label" for="message">您的需求與想法 <span style="color:var(--rose)">*</span></label>
-            <textarea id="message" name="message" class="form-control" style="min-height: 130px;" placeholder="請描述您偏好的花材色系、風格，以及任何特殊要求。若有參考圖片歡迎在確認後透過 LINE 傳送。" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              style="min-height: 130px;"
+              placeholder="請描述您偏好的花材色系、風格（如自然系、簡約現代、浪漫粉嫩），以及任何特殊要求。若有參考圖片歡迎在確認後透過 LINE 傳送。"
+              required
+            ></textarea>
           </div>
+
           <div style="background: var(--primary-pale); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 22px; font-size: 0.84rem; color: var(--primary-dark); font-family: 'Noto Sans TC', sans-serif;">
-            🔒 您的個人資料僅用於訂購聯繫，絕不對外提供。送出後我們會於 2 小時內電話或 LINE 與您確認。
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> 您的個人資料僅用於訂購聯繫，絕不對外提供。送出後我們會於 2 小時內電話或 LINE 與您確認。
           </div>
+
           <button type="submit" class="btn btn-primary btn-full">
             送出訂購需求 ✦
           </button>
         </form>
       </div>
+
+      <!-- Info Panel -->
       <div class="info-panel">
+
+        <!-- Address -->
         <div class="contact-card reveal">
           <div class="contact-card-header">
-            <div class="contact-card-icon">📍</div>
+            <div class="contact-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
             <div class="contact-card-title">工作室地址</div>
           </div>
           <div class="contact-card-body">
@@ -336,27 +381,33 @@
             <span style="font-size:0.82rem;color:var(--text-light);margin-top:6px;display:block;">地圖搜尋「青禾花藝」即可導航抵達。</span>
           </div>
         </div>
+
+        <!-- Phone & LINE -->
         <div class="contact-card reveal reveal-delay-1">
           <div class="contact-card-header">
-            <div class="contact-card-icon">📞</div>
-            <div class="contact-card-title">電話 ＆ LINE</div>
+            <div class="contact-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div class="contact-card-title">電話 & LINE</div>
           </div>
           <div class="contact-card-body">
             電話訂購：<strong><a href="tel:0423285566">04-2328-5566</a></strong><br>
             LINE 諮詢：<strong>0912-345-678</strong>
-            <div><span class="line-badge">💬 LINE 加好友</span></div>
+            <div>
+              <span class="line-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> LINE 加好友</span>
+            </div>
             <div class="response-badge">
-              <div class="response-badge-icon">⚡</div>
+              <div class="response-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="display:inline-block;vertical-align:middle"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
               <div class="response-badge-text">
                 <strong>快速回應承諾</strong>
-                電話 ＆ LINE 2 小時內確認，婚禮諮詢 24 小時內安排面談。
+                電話 & LINE 2 小時內確認，婚禮諮詢 24 小時內安排面談。
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Hours -->
         <div class="contact-card reveal reveal-delay-2">
           <div class="contact-card-header">
-            <div class="contact-card-icon">🕐</div>
+            <div class="contact-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
             <div class="contact-card-title">營業時間</div>
           </div>
           <div class="contact-card-body">
@@ -371,16 +422,21 @@
             <p style="margin-top:12px;font-size:0.82rem;color:var(--text-light);">國定假日營業時間如有調整，將於 LINE 公告。婚禮當日佈置服務不受此限。</p>
           </div>
         </div>
+
+        <!-- Wedding Info Box -->
         <div class="wedding-info-box reveal reveal-delay-3">
           <div class="wedding-info-box-title">
-            <span>💒</span> 婚禮花藝專屬服務
+            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-5h6v5"/><path d="M9 11a3 3 0 0 1 6 0"/></svg></span> 婚禮花藝專屬服務
           </div>
-          <p>婚禮諮詢提供<strong>免費面談服務</strong>，由陳青蕊老師親自接待。建議提前 <strong>3 個月以上</strong>預約，旺季（4–5 月、10–12 月）請至少提前 6 個月。面談後 3 個工作天內提供詳細報價與設計方案。</p>
+          <p>婚禮諮詢提供<strong>免費面談服務</strong>，由陳青萱老師親自接待。建議提前 <strong>3 個月以上</strong>預約，旺季（4–5 月、10–12 月）請至少提前 6 個月。面談後 3 個工作天內提供詳細報價與設計方案。</p>
         </div>
+
       </div>
     </div>
   </div>
 </section>
+
+<!-- FAQ Section -->
 <section class="faq-section">
   <div class="container">
     <div class="section-heading reveal">
@@ -388,52 +444,102 @@
       <h2>訂購前您可能想知道</h2>
       <p>若您的問題未在下方列出，歡迎直接致電或傳 LINE 詢問，我們很樂意為您解答。</p>
     </div>
+
     <div class="faq-list">
+
       <div class="faq-item reveal">
-        <div class="faq-question">訂購花束需要提前多久預約？<div class="faq-toggle">+</div></div>
-        <div class="faq-answer">一般花束（生日、節日）建議提前 <strong>1–3 天</strong>預訂，讓我們有時間備妥最新鮮的花材。若需特定少見花材或大量訂購，請提前 <strong>5 天以上</strong>。婚禮花藝建議提前 <strong>3 個月至半年</strong>預約，確保設計師檔期與花材來源充足。企業月租服務可隨時洽談，通常 1 週內即可安排首次配送。</div>
+        <div class="faq-question">
+          訂購花束需要提前多久預約？
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          一般花束（生日、節日）建議提前 <strong>1–3 天</strong>預訂，讓我們有時間備妥最新鮮的花材。若需特定少見花材或大量訂購，請提前 <strong>5 天以上</strong>。婚禮花藝建議提前 <strong>3 個月至半年</strong>預約，確保設計師檔期與花材來源充足。企業月租服務可隨時洽談，通常 1 週內即可安排首次配送。
+        </div>
       </div>
+
       <div class="faq-item reveal">
-        <div class="faq-question">你們提供宅配服務嗎？配送範圍與費用如何？<div class="faq-toggle">+</div></div>
-        <div class="faq-answer">目前提供<strong>台中市區宅配服務</strong>，配送費用為 NT$150。宅配時間可指定上午（10:00–13:00）或下午（14:00–18:00）時段，並在配送前 1 小時以電話或 LINE 通知收件人。台中市區外的宅配需求請來電洽詢，部分地區可配合安排。婚禮當日佈置服務含現場安裝，不另計配送費。</div>
+        <div class="faq-question">
+          你們提供宅配服務嗎？配送範圍與費用如何？
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          目前提供<strong>台中市區宅配服務</strong>，配送費用為 NT$150。宅配時間可指定上午（10:00–13:00）或下午（14:00–18:00）時段，並在配送前 1 小時以電話或 LINE 通知收件人。台中市區外的宅配需求請來電洽詢，部分地區可配合安排。婚禮當日佈置服務含現場安裝，不另計配送費。
+        </div>
       </div>
+
       <div class="faq-item reveal">
-        <div class="faq-question">可以客製指定花材或色系嗎？<div class="faq-toggle">+</div></div>
-        <div class="faq-answer">完全可以！青禾花藝以客製服務為核心，我們非常歡迎您提供偏好的<strong>色系、花材種類或風格參考圖</strong>。在填寫訂購表單或來電洽詢時，盡量描述您的需求（如：喜歡粉色系、偏好自然風、想加入小雛菊等），我們的設計師會據此提供最適合的建議。季節限定花材如供貨不穩定，設計師會提前與您溝通替代方案。</div>
+        <div class="faq-question">
+          可以客製指定花材或色系嗎？
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          完全可以！青禾花藝以客製服務為核心，我們非常歡迎您提供偏好的<strong>色系、花材種類或風格參考圖</strong>。在填寫訂購表單或來電洽詢時，盡量描述您的需求（如：喜歡粉色系、偏好自然風、想加入小雛菊等），我們的設計師會據此提供最適合的建議。季節限定花材如供貨不穩定，設計師會提前與您溝通替代方案。
+        </div>
       </div>
+
       <div class="faq-item reveal">
-        <div class="faq-question">付款方式有哪些？需要付訂金嗎？<div class="faq-toggle">+</div></div>
-        <div class="faq-answer">接受現金、LINE Pay、銀行轉帳、信用卡（至工作室）等付款方式。<br><br>一般花束訂購：<strong>全額於取貨或配送時付清</strong>，無需訂金。<br>婚禮花藝及大型空間佈置：確認設計後先付 <strong>30% 訂金</strong>，餘款於交貨前付清。<br>企業月租服務：每月月底開立發票，下月初付款，可開立統一發票。</div>
+        <div class="faq-question">
+          付款方式有哪些？需要付訂金嗎？
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          接受現金、LINE Pay、銀行轉帳、信用卡（至工作室）等付款方式。<br><br>
+          一般花束訂購：<strong>全額於取貨或配送時付清</strong>，無需訂金。<br>
+          婚禮花藝及大型空間佈置：確認設計後先付 <strong>30% 訂金</strong>，尾款於交貨前付清。<br>
+          企業月租服務：每月月底開立發票，下月初付款，可開立統一發票。
+        </div>
       </div>
+
       <div class="faq-item reveal">
-        <div class="faq-question">如何保養花束，讓花朵保鮮更久？<div class="faq-toggle">+</div></div>
-        <div class="faq-answer">每束花都會附上保養說明卡，以下是基本原則：<br><br>① 取花後盡快斜切莖部（約 1–2 cm），並插入乾淨清水中；<br>② 置於避免陽光直射、通風良好且遠離冷氣直吹的位置；<br>③ 每 1–2 天換水一次，並再次斜切莖部；<br>④ 避免與蔬果（特別是蘋果、香蕉）放置在同一空間，其乙烯氣體會加速花朵凋謝。<br><br>一般新鮮花束在良好保養下可維持 <strong>5–10 天</strong>的觀賞期，玫瑰與百合等耐放花材甚至可達 2 週。</div>
+        <div class="faq-question">
+          如何保養花束，讓花卉保鮮更久？
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          每束花都會附上保養說明卡，以下是基本原則：<br><br>
+          ① 取花後盡快斜切莖部（約 1–2 cm），並插入乾淨清水中；<br>
+          ② 置於避免陽光直射、通風良好且遠離冷氣直吹的位置；<br>
+          ③ 每 1–2 天換水一次，並再次斜切莖部；<br>
+          ④ 避免與蔬果（特別是蘋果、香蕉）放置在同一空間，其乙烯氣體會加速花朵凋謝。<br><br>
+          一般新鮮花束在良好保養下可維持 <strong>5–10 天</strong>的觀賞期，玫瑰與百合等耐放花材甚至可達 2 週。
+        </div>
       </div>
+
       <div class="faq-item reveal">
-        <div class="faq-question">可以只是來工作室看看，不一定要訂花嗎？<div class="faq-toggle">+</div></div>
-        <div class="faq-answer">當然歡迎！青禾花藝工作室是一個開放、溫馨的空間，非常歡迎您在營業時間前來參觀、欣賞當季花材，與我們的設計師聊聊花藝。如果您在考慮婚禮花藝或花藝課程，也可以事先來訪瞭解工作室環境，無需任何預約或消費壓力。如需確保設計師在場為您詳細說明服務，建議事先來電告知，我們會為您安排專人接待。</div>
+        <div class="faq-question">
+          可以只是來工作室看看，不一定要訂花嗎？
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          當然歡迎！青禾花藝工作室是一個開放、溫馨的空間，非常歡迎您在營業時間前來參觀、欣賞當季花材，與我們的設計師聊聊花藝。如果您在考慮婚禮花藝或花藝課程，也可以事先來訪了解工作室環境，無需任何預約或消費壓力。如需確保設計師在場為您詳細說明服務，建議事先來電告知，我們會為您安排專人接待。
+        </div>
       </div>
+
     </div>
   </div>
 </section>
+
+<!-- CTA Banner -->
 <section style="padding: clamp(72px, 9vw, 130px) 0; background: var(--cream);">
   <div class="container">
     <div class="cta-banner reveal">
       <h2>每束花，都是一份用心</h2>
-      <p>從您的第一通詢問到花朵送達，青禾花藝用每個細節守護您的心意。期待成為您生命故事中最美的那一頁。</p>
+      <p>從您的第一通詢問到花束送達，青禾花藝用每個細節守護您的心意。期待成為您生命故事中最美的那一頁。</p>
       <div class="cta-actions">
-        <a href="tel:0423285566" class="btn btn-outline-white">📞 04-2328-5566</a>
+        <a href="tel:0423285566" class="btn btn-outline-white"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 04-2328-5566</a>
         <a href="services.html" class="btn btn-primary" style="background:var(--gold);box-shadow:0 4px 18px rgba(184,146,74,0.4);">查看所有服務</a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="nav-logo" style="margin-bottom: 16px;">
-          <div class="nav-logo-icon">🌿</div>
+          <div class="nav-logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" style="display:inline-block;vertical-align:middle"><path d="M17 8C8 10 5.9 16.17 3.82 19.66A1 1 0 0 0 4.64 21c7.31-.42 13.36-4.85 13.36-13v-1.34l-1-1z"/><path d="M3 21c0-5.33 4-10.67 8-13"/></svg></div>
           <div class="nav-logo-text">
             <span class="nav-logo-name">青禾花藝</span>
             <span class="nav-logo-sub">Qinghe Floral Arts</span>
@@ -463,10 +569,10 @@
       </div>
       <div>
         <div class="footer-heading">聯絡資訊</div>
-        <div class="footer-contact-item"><div class="footer-contact-icon">📍</div><div class="footer-contact-text">台中市西區民生路 188 號</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon">📞</div><div class="footer-contact-text">04-2328-5566</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon">🕐</div><div class="footer-contact-text">週二至週日 10:00–19:00<br>週一公休</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon">🌐</div><div class="footer-contact-text"><a href="https://bridgeseqlab.com" class="footer-link" target="_blank" rel="noopener">設計：橋序創研</a></div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="footer-contact-text">台中市西區民生路 188 號</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="footer-contact-text">04-2328-5566</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="footer-contact-text">週二至週日 10:00–19:00<br>週一公休</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="footer-contact-text"><a href="https://bridgeseqlab.com" class="footer-link" target="_blank" rel="noopener">設計：橋序創研</a></div></div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -475,9 +581,11 @@
     </div>
   </div>
 </footer>
+
 <button class="back-to-top" id="back-to-top" aria-label="回到頂部">↑</button>
 <script src="js/main.js"></script>
 <script>
+// FAQ accordion
 document.querySelectorAll('.faq-question').forEach(q => {
   q.addEventListener('click', () => {
     const item = q.closest('.faq-item');
