@@ -41,6 +41,16 @@
   .site-nav .logo-color { display:none; }
   .site-nav.scrolled .logo-white { display:none; }
   .site-nav.scrolled .logo-color { display:block; }
+
+  /* nav-link 顏色:頂部(深色 hero 上)用白色,滾動後(奶白底)用深色 */
+  .site-nav .nav-link { color: rgba(255,255,255,0.92); }
+  .site-nav .nav-link:hover,
+  .site-nav .nav-link.active { color: #fff; }
+  .site-nav .nav-link::after { background: #fff; }
+  .site-nav.scrolled .nav-link { color: var(--text-mid); }
+  .site-nav.scrolled .nav-link:hover,
+  .site-nav.scrolled .nav-link.active { color: var(--primary); }
+  .site-nav.scrolled .nav-link::after { background: var(--primary); }
 </style>
 </head>
 <body>
@@ -53,8 +63,8 @@
   <div class="container">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="logos/qinghe-florist-logo-white.png" alt="R���" class="logo-white" style="height:46px;width:auto;">
-          <img src="logos/qinghe-florist-logo.png" alt="R���" class="logo-color" style="height:46px;width:auto;display:none;">
+        <img src="logos/qinghe-florist-logo-white.png" alt="青禾花藝" class="logo-white" style="height:46px;width:auto;">
+          <img src="logos/qinghe-florist-logo.png" alt="青禾花藝" class="logo-color" style="height:46px;width:auto">
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="nav-link">首頁</a></li>
