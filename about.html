@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>關於青禾花藝 — 陳青萱創辦人・台中西區手工花藝工作室</title>
+<meta name="description" content="青禾花藝由陳青萱於 2016 年創立，歐洲花藝訓練背景，以「植物極簡主義」為核心理念，用台灣在地花材手工打造每束獨特花藝。了解我們的品牌故事、設計師團隊與創作理念。">
+<meta name="keywords" content="青禾花藝品牌故事,陳青萱花藝師,台中花藝工作室,手工花藝,植物極簡,台中花藝課程">
+<meta property="og:title" content="關於青禾花藝 — 品牌故事與創作理念">
+<meta property="og:description" content="青禾花藝 2016 年創立，歐洲花藝訓練背景，以在地花材打造自然療癒美學。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://izzo24.github.io/qinghe-florist/about.html">
+<link rel="canonical" href="https://izzo24.github.io/qinghe-florist/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "青禾花藝",
+  "alternateName": "Qinghe Floral Arts",
+  "description": "台中西區手工花藝工作室，專注婚禮花藝、節日花禮、企業花禮與花藝課程。",
+  "url": "https://izzo24.github.io/qinghe-florist/",
+  "telephone": "04-2328-5566",
+  "foundingDate": "2016",
+  "founder": {
+    "@type": "Person",
+    "name": "陳青萱",
+    "jobTitle": "創辦人 / 首席設計師"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "民生路 188 號",
+    "addressLocality": "台中市西區",
+    "addressCountry": "TW"
+  },
+  "openingHours": "Tu-Su 10:00-19:00",
+  "image": "https://izzo24.github.io/qinghe-florist/og-image.jpg"
+}
+</script>
+<style>
+/* —— About page styles —— */
+
+/* Brand Story */
+.story-section {
+  background: var(--cream);
+}
+.story-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 72px;
+  align-items: center;
+}
+.story-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.story-blob {
+  width: 340px;
+  height: 340px;
+  background: linear-gradient(135deg, var(--primary-pale) 0%, #d4eeda 50%, var(--gold-light) 100%);
+  border-radius: 60% 40% 55% 45% / 45% 55% 45% 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+  animation: morphBlob 8s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 60px rgba(58, 125, 68, 0.18);
+}
+@keyframes morphBlob {
+  0%, 100% { border-radius: 60% 40% 55% 45% / 45% 55% 45% 55%; }
+  25% { border-radius: 45% 55% 40% 60% / 55% 45% 55% 45%; }
+  50% { border-radius: 55% 45% 60% 40% / 40% 60% 40% 60%; }
+  75% { border-radius: 40% 60% 45% 55% / 60% 40% 60% 40%; }
+}
+.story-deco-ring {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 2px dashed rgba(58,125,68,0.2);
+  animation: rotateSlow 20s linear infinite;
+}
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.story-badge {
+  position: absolute;
+  bottom: 20px;
+  right: -10px;
+  background: white;
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+.story-badge-icon { font-size: 1.4rem; }
+.story-badge-text { font-size: 0.82rem; font-family: 'Noto Sans TC', sans-serif; }
+.story-badge-label { font-weight: 700; color: var(--text); display: block; }
+.story-badge-sub { color: var(--text-light); }
+
+.story-text h2 { margin-bottom: 24px; }
+.story-text p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--text-mid);
+}
+.story-highlight {
+  background: var(--primary-pale);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 20px 24px;
+  margin: 28px 0;
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--primary-dark);
+  font-family: 'Noto Serif TC', serif;
+  line-height: 1.9;
+}
+
+/* Values */
+.values-section { background: var(--bg-alt); }
+.value-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: var(--transition);
+}
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+.value-icon {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: var(--primary-pale);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem;
+  margin: 0 auto 24px;
+  transition: var(--transition);
+}
+.value-card:hover .value-icon { background: var(--primary); transform: scale(1.1) rotate(-8deg); }
+.value-card h3 { margin-bottom: 12px; font-size: 1.15rem; }
+.value-card p { font-size: 0.92rem; line-height: 1.8; }
+
+/* Team */
+.team-section { background: var(--cream); }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+.team-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+.team-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+.team-card-header {
+  padding: 40px 32px 24px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-pale) 0%, var(--gold-light) 100%);
+  position: relative;
+}
+.team-avatar {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  background: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem;
+  margin: 0 auto 16px;
+  box-shadow: 0 8px 24px rgba(58,125,68,0.15);
+  border: 4px solid white;
+}
+.team-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+  font-family: 'Noto Serif TC', serif;
+}
+.team-title {
+  font-size: 0.82rem;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.team-card-body { padding: 24px 28px 32px; }
+.team-stat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.team-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.team-stat-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+}
+.team-specialty {
+  background: var(--primary-pale);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  color: var(--primary-dark);
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.team-specialty strong { display: block; margin-bottom: 4px; color: var(--primary); font-size: 0.78rem; letter-spacing: 0.06em; }
+
+/* Certifications */
+.cert-section { background: var(--bg-alt); }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.cert-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+.cert-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+.cert-icon {
+  width: 54px; height: 54px;
+  border-radius: var(--radius);
+  background: var(--gold-light);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+.cert-title { font-weight: 700; font-size: 0.95rem; color: var(--text); margin-bottom: 6px; }
+.cert-desc { font-size: 0.84rem; color: var(--text-light); font-family: 'Noto Sans TC', sans-serif; line-height: 1.6; }
+
+/* Timeline */
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px; top: 8px; bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--gold));
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+.timeline-dot {
+  position: absolute;
+  left: -27px; top: 6px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+.timeline-year {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans TC', sans-serif;
+  margin-bottom: 4px;
+}
+.timeline-text {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .story-layout { grid-template-columns: 1fr; gap: 48px; }
+  .story-visual { margin-bottom: 0; }
+  .story-blob { width: 260px; height: 260px; font-size: 5.5rem; }
+  .story-deco-ring { width: 310px; height: 310px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader">
+  <div class="loader-flower">🌸</div>
+  <div class="loader-text">載入中</div>
+</div>
+
+<!-- Navigation -->
+<nav class="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌿</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">青禾花藝</span>
+          <span class="nav-logo-sub">Qinghe Floral Arts</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首頁</a></li>
+        <li><a href="products.html" class="nav-link">花藝作品</a></li>
+        <li><a href="services.html" class="nav-link">服務項目</a></li>
+        <li><a href="about.html" class="nav-link active">關於青禾</a></li>
+        <li><a href="contact.html" class="nav-link">聯絡訂購</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">立即訂花</a>
+      <button class="nav-hamburger" aria-label="開啟選單"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="nav-mobile">
+  <button class="nav-mobile-close">✕</button>
+  <a href="index.html" class="nav-link">首頁</a>
+  <a href="products.html" class="nav-link">花藝作品</a>
+  <a href="services.html" class="nav-link">服務項目</a>
+  <a href="about.html" class="nav-link active">關於青禾</a>
+  <a href="contact.html" class="nav-link">聯絡訂購</a>
+  <a href="contact.html" class="btn btn-primary">立即訂花</a>
+</nav>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content reveal">
+      <div class="eyebrow">關於青禾</div>
+      <h1>關於青禾花藝</h1>
+      <p>以自然為師，以花為語。青禾花藝相信，每一束精心設計的花，都能成為最真誠的情感橋樑，連結人與人之間最柩摯的心意。</p>
+    </div>
+  </div>
+</section>
+
+<!-- Brand Story -->
+<section class="story-section">
+  <div class="container">
+    <div class="story-layout">
+      <div class="story-visual reveal">
+        <div class="story-deco-ring"></div>
+        <div class="story-blob">🌿</div>
+        <div class="story-badge">
+          <div class="story-badge-icon">🏆</div>
+          <div class="story-badge-text">
+            <span class="story-badge-label">創立 2016 年</span>
+            <span class="story-badge-sub">8 年手工花藝經驗</span>
+          </div>
+        </div>
+      </div>
+      <div class="story-text reveal reveal-delay-1">
+        <div class="eyebrow">品牌故事</div>
+        <h2>從阿姆斯特丹<br>到台中西區</h2>
+        <p>青禾花藝的故事，要從 2012 年說起。創辦人陳青萱帶著對花草的純粹熱愛，隻身前往荷蘭阿姆斯特丹，在世界知名的皇家花藝學校接受長達兩年的正規訓練。在歐洲，她學習到「植物極簡主義」的核心美學——讓花材說話，不過度裝飾，讓每株植物呈現最自然的姿態。</p>
+        <p>2014 年回台後，青萱在台中一家知名花坊累積了兩年實戰經驗，深入了解台灣花卉市場與在地花材的四季節奏。她發現台灣有豐富且美麗的在地花材，卻常常被忽略，過度仰賴進口的花種。這個觀察成為她創業的核心理念之一。</p>
+        <div class="story-highlight">「我想要的不只是漂亮的花，而是有靈魂的花。用台灣土地上長出的花材，訴說屬於我們自己的故事。」——陳青萱</div>
+        <p>2016 年，青禾花藝在台中市西區民生路正式開業。「青禾」取自自然之色——青翠嫩綠，如初春新芽，象徵生命力與清新的開始。工作室以溫暖的木質調打造，讓每位踏入的客人都能感受到花草的療癒與自然的氣息。</p>
+        <p>至今，青禾花藝已服務超過 1,200 對新人、逾 300 家企業客戶，課程學員遍布台中各地。我們依然堅持每束花都由設計師親手製作，用時間和心意，換取每個笑容背後的感動。</p>
+        <div style="margin-top:28px;">
+          <a href="services.html" class="btn btn-primary">探索我們的服務</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="values-section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">核心理念</div>
+      <h2>我們所相信的事</h2>
+      <p>青禾花藝的每一個決策，都源自我們對花藝、對自然、對客戶深刻的承諾。</p>
+    </div>
+    <div class="grid-4">
+      <div class="value-card reveal">
+        <div class="value-icon">🌾</div>
+        <h3>在地花材</h3>
+        <p>優先選用台灣在地季節花材，支持本地花農，減少碳足跡，讓您的花束擁有台灣土地的溫度。</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <div class="value-icon">✋</div>
+        <h3>手工溫度</h3>
+        <p>每束花由設計師親手製作，從花材挑選、修剪到包裝，拒絕量產，讓每束花都是獨一無二的作品。</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <div class="value-icon">💎</div>
+        <h3>客製設計</h3>
+        <p>深入了解每位客戶的需求、個性與場合，提供完全客製的設計方案，讓花成為最貼心的語言。</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <div class="value-icon">🌱</div>
+        <h3>環保理念</h3>
+        <p>使用環保包裝紙，減少塑膠使用，鼓勵花材廢料堆肥，以實際行動守護我們深愛的自然環境。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="team-section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">設計師團隊</div>
+      <h2>認識青禾的花藝人</h2>
+      <p>每一朵花背後，都有一雙充滿熱情的手。我們的設計師團隊，是青禾花藝最珍貴的資產。</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-card-header">
+          <div class="team-avatar">👩‍🌾</div>
+          <div class="team-name">陳青萱</div>
+          <div class="team-title">創辦人 / 首席設計師</div>
+        </div>
+        <div class="team-card-body">
+          <div class="team-stat-list">
+            <div class="team-stat"><div class="team-stat-dot"></div><span>花藝資歷 8 年以上</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>荷蘭皇家花藝學校認證</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>歐洲花藝研修 2 年</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>台灣花藝設計師協會會員</span></div>
+          </div>
+          <div class="team-specialty">
+            <strong>專長領域</strong>
+            婚禮捧花設計、植物極簡風格、空間花藝美學
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-card-header">
+          <div class="team-avatar">👩‍🎨</div>
+          <div class="team-name">林佳宜</div>
+          <div class="team-title">資深花藝設計師</div>
+        </div>
+        <div class="team-card-body">
+          <div class="team-stat-list">
+            <div class="team-stat"><div class="team-stat-dot"></div><span>花藝資歷 5 年以上</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>台中在地花材研究專家</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>企業花禮特約設計師</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>花藝療癒課程講師</span></div>
+          </div>
+          <div class="team-specialty">
+            <strong>專長領域</strong>
+            企業花禮設計、節氣花藝、花藝課程教學
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-card-header">
+          <div class="team-avatar">👨‍🌺</div>
+          <div class="team-name">王俊傑</div>
+          <div class="team-title">花藝助理設計師</div>
+        </div>
+        <div class="team-card-body">
+          <div class="team-stat-list">
+            <div class="team-stat"><div class="team-stat-dot"></div><span>花藝設計科系應屆畢業</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>創意包裝設計專長</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>活力充沛的花藝新血</span></div>
+            <div class="team-stat"><div class="team-stat-dot"></div><span>台中在地宅配執行</span></div>
+          </div>
+          <div class="team-specialty">
+            <strong>專長領域</strong>
+            花束包裝設計、花材物流管理、客戶宅配服務
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications & Timeline -->
+<section class="cert-section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="eyebrow">認證與榮耀</div>
+      <h2>專業資歷，值得信賴</h2>
+      <p>我們以嚴謹的態度追求專業成長，每一張認證都代表我們對花藝品質的堅持。</p>
+    </div>
+
+    <div class="cert-grid" style="margin-bottom: 72px;">
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏅</div>
+        <div>
+          <div class="cert-title">台灣花藝設計師協會會員</div>
+          <div class="cert-desc">正式認證會員，定期參與國內外花藝研習與設計競賽，持續精進專業技能。</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-icon">🌷</div>
+        <div>
+          <div class="cert-title">荷蘭皇家花藝學校認證</div>
+          <div class="cert-desc">創辦人陳青萱取得荷蘭皇家花藝學校（KAVB）國際認證，代表歐洲花藝最高教育水準。</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-icon">🌟</div>
+        <div>
+          <div class="cert-title">2022 年台中優良商店表揚</div>
+          <div class="cert-desc">獲台中市政府評選為年度優良特色商店，肯定我們在在地花藝文化推廣上的貢獻。</div>
+        </div>
+      </div>
+      <div class="cert-card reveal reveal-delay-3">
+        <div class="cert-icon">📰</div>
+        <div>
+          <div class="cert-title">媒體報導</div>
+          <div class="cert-desc">曾獲《Shopping Design》、《La Vie》、台中在地媒體等多家媒體專題報導，肯定品牌美學。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div style="max-width: 640px; margin: 0 auto;">
+      <div class="section-heading reveal" style="margin-bottom: 40px; text-align: left; max-width: none;">
+        <div class="eyebrow">品牌里程</div>
+        <h2>青禾的成長故事</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2012–2014</div>
+          <div class="timeline-text">陳青萱赴荷蘭阿姆斯特丹，就讀荷蘭皇家花藝學校，系統學習歐洲自然風格花藝，取得國際認證。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2014–2016</div>
+          <div class="timeline-text">回台後於台中知名花坊任職資深設計師，深入研究台灣在地花材，累積婚禮與商業花藝實戰經驗。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2016</div>
+          <div class="timeline-text">青禾花藝於台中市西區民生路 188 號正式創立，以「在地花材・手工溫度」為核心，打開第一扇工作室大門。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2018</div>
+          <div class="timeline-text">開設花藝課程，推廣花藝療癒美學，首年吸引逾 200 名學員參與，深獲好評。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2020</div>
+          <div class="timeline-text">擴大企業花禮服務，與台中多家五星飯店及知名企業簽訂長期合作協議。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2022</div>
+          <div class="timeline-text">獲台中市政府評選為年度優良特色商店。林佳宜加入團隊，花藝服務能量大幅提升。</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2024</div>
+          <div class="timeline-text">累計服務超過 1,200 對新人、300+ 企業客戶，花藝課程學員突破 1,500 人次，持續為台中花藝文化注入能量。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section style="padding: clamp(72px, 9vw, 130px) 0; background: var(--cream);">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2>與青禾花藝一起，讓生活更美好</h2>
+      <p>無論是您的特別時刻，還是日常的一抹美麗，我們都期待成為您生命中那束最美的花。</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-outline-white">立即聯繫我們</a>
+        <a href="services.html" class="btn btn-primary" style="background:var(--gold);box-shadow:0 4px 18px rgba(184,146,74,0.4);">查看服務項目</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom: 16px;">
+          <div class="nav-logo-icon">🌿</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">青禾花藝</span>
+            <span class="nav-logo-sub">Qinghe Floral Arts</span>
+          </div>
+        </div>
+        <p>以自然為師，用花語傳遞心意。台中西區手工花藝工作室，2016 年創立至今。</p>
+      </div>
+      <div>
+        <div class="footer-heading">快速連結</div>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">首頁</a></li>
+          <li><a href="products.html" class="footer-link">花藝作品</a></li>
+          <li><a href="services.html" class="footer-link">服務項目</a></li>
+          <li><a href="about.html" class="footer-link">關於青禾</a></li>
+          <li><a href="contact.html" class="footer-link">聯絡訂購</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">服務項目</div>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">婚禮花藝</a></li>
+          <li><a href="services.html" class="footer-link">節日花禮</a></li>
+          <li><a href="services.html" class="footer-link">企業花禮</a></li>
+          <li><a href="services.html" class="footer-link">空間佈置</a></li>
+          <li><a href="services.html" class="footer-link">花藝課程</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">聯絡資訊</div>
+        <div class="footer-contact-item"><div class="footer-contact-icon">📍</div><div class="footer-contact-text">台中市西區民生路 188 號</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon">📞</div><div class="footer-contact-text">04-2328-5566</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon">🕐</div><div class="footer-contact-text">週二至週日 10:00–19:00<br>週一公休</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon">🌐</div><div class="footer-contact-text"><a href="https://bridgeseqlab.com" class="footer-link" target="_blank" rel="noopener">設計：橋序創研</a></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 青禾花藝 Qinghe Floral Arts. All rights reserved.</p>
+      <p>Designed by <a href="https://bridgeseqlab.com" class="footer-link" target="_blank" rel="noopener">橋序創研 BridgeSeq Lab</a></p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" aria-label="回到頂部">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
