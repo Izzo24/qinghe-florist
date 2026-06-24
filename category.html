@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>產品分類 — 青禾花藝｜婚禮花藝・手工花束・企業花禮・節慶花藝</title>
+<meta name="description" content="青禾花藝作品展示，包含婚禮捧花、手綁花束、節日花禮、企業花藝等完整系列，每件作品均由設計師手工訂製。">
+<meta property="og:title" content="花藝作品 — 青禾花藝">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://izzo24.github.io/qinghe-florist/products.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.flower-card { transition: opacity 0.3s, transform 0.3s, box-shadow 0.35s, transform 0.35s; }
+.products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; }
+.product-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.tag-wedding { background: var(--rose-pale); color: var(--rose); }
+.tag-daily { background: var(--primary-pale); color: var(--primary); }
+.tag-corporate { background: var(--gold-light); color: var(--gold); }
+.tag-seasonal { background: #EDE7FF; color: #7C3AED; }
+.price-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+  .site-nav .logo-white { display:block; }
+  .site-nav .logo-color { display:none; }
+  .site-nav.scrolled .logo-white { display:none; }
+  .site-nav.scrolled .logo-color { display:block; }
+
+  /* nav-link 顏色:頂部(深色 hero 上)用白色,滾動後(奶白底)用深色 */
+  .site-nav .nav-link { color: rgba(255,255,255,0.92); }
+  .site-nav .nav-link:hover,
+  .site-nav .nav-link.active { color: #fff; }
+  .site-nav .nav-link::after { background: #fff; }
+  .site-nav.scrolled .nav-link { color: var(--text-mid); }
+  .site-nav.scrolled .nav-link:hover,
+  .site-nav.scrolled .nav-link.active { color: var(--primary); }
+  .site-nav.scrolled .nav-link::after { background: var(--primary); }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logos/qinghe-florist-logo-white.png" alt="青禾花藝" class="logo-white" style="height:46px;width:auto;">
+          <img src="logos/qinghe-florist-logo.png" alt="青禾花藝" class="logo-color" style="height:46px;width:auto">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">首頁</a></li>
+        <li><a href="products.html" class="nav-link">花藝作品</a></li><li><a href="category.html" class="nav-link">產品分類</a></li>
+        <li><a href="services.html" class="nav-link">服務項目</a></li>
+        <li><a href="about.html" class="nav-link">關於青禾</a></li>
+        <li><a href="faq.html" class="nav-link">常見問題</a></li><li><a href="contact.html" class="nav-link">聯絡訂購</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">立即訂花</a>
+      <button class="nav-hamburger" aria-label="開啟選單"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="nav-mobile">
+  <button class="nav-mobile-close">✕</button>
+  <a href="index.html" class="nav-link">首頁</a>
+  <a href="products.html" class="nav-link">花藝作品</a>
+  <a href="category.html" class="nav-link">產品分類</a>
+  <a href="services.html" class="nav-link">服務項目</a>
+  <a href="about.html" class="nav-link">關於青禾</a>
+  <a href="faq.html" class="nav-link">常見問題</a>
+  <a href="contact.html" class="nav-link">聯絡訂購</a>
+  <a href="contact.html" class="btn btn-primary">立即訂花</a>
+</nav>
+<header class="page-hero">
+  <div class="page-hero-content container">
+    <span class="eyebrow">產品分類</span>
+    <h1>依需求，找到最適合的花藝</h1>
+    <p>婚禮、日常送禮、企業合作到節慶應景，點選分類瀏覽對應作品</p>
+  </div>
+</header>
+<section class="cat-section">
+  <div class="container">
+    <div class="cat-grid">
+      <a href="products.html" class="cat-card reveal">
+        <div class="cat-card-img"><img src="images/product-wedding.webp" alt="婚禮花藝" loading="lazy"></div>
+        <div class="cat-card-body">
+          <h3>婚禮花藝</h3>
+          <p>新娘捧花、桌花佈置、證婚拱門與整場婚禮花藝設計。從提案、試版到當日佈置，讓花成為婚禮最動人的細節。</p>
+          <div class="cat-card-foot"><span class="cat-price">NT$2,400 起</span><span class="cat-more">查看作品 →</span></div>
+        </div>
+      </a>
+      <a href="products.html" class="cat-card reveal">
+        <div class="cat-card-img"><img src="images/product-daily.webp" alt="手工花束" loading="lazy"></div>
+        <div class="cat-card-body">
+          <h3>手工花束</h3>
+          <p>生日、紀念日、求婚或日常送禮的手工花束。依對象、場合與您想傳達的心意，當季手綁、獨一無二。</p>
+          <div class="cat-card-foot"><span class="cat-price">NT$1,200 起</span><span class="cat-more">查看作品 →</span></div>
+        </div>
+      </a>
+      <a href="products.html" class="cat-card reveal">
+        <div class="cat-card-img"><img src="images/product-corp.webp" alt="企業花禮" loading="lazy"></div>
+        <div class="cat-card-body">
+          <h3>企業花禮</h3>
+          <p>開幕花籃、會議桌花、企業贈禮與長期合約配花。專業形象、準時配送，是您最可靠的花藝夥伴。</p>
+          <div class="cat-card-foot"><span class="cat-price">洽詢報價</span><span class="cat-more">查看作品 →</span></div>
+        </div>
+      </a>
+      <a href="products.html" class="cat-card reveal">
+        <div class="cat-card-img"><img src="images/hero.webp" alt="節慶花藝" loading="lazy"></div>
+        <div class="cat-card-body">
+          <h3>節慶花藝</h3>
+          <p>母親節、情人節、聖誕與農曆新年的應景花藝。每逢佳節，用一束花為重要的人留下季節的記憶。</p>
+          <div class="cat-card-foot"><span class="cat-price">依檔期</span><span class="cat-more">查看作品 →</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="cat-note reveal">實際款式與報價依當季花材與您的需求客製，歡迎透過「聯絡訂購」與我們討論。</div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="./logos/qinghe-florist-logo-white.png" alt="青禾花藝" style="height:44px;width:auto;display:block;margin-bottom:16px;">
+        <p>以自然為師，用花語傳遞心意。台中西區手工花藝工作室。</p>
+      </div>
+      <div>
+        <div class="footer-heading">快速連結</div>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">首頁</a></li>
+          <li><a href="products.html" class="footer-link">花藝作品</a></li>
+          <li><a href="services.html" class="footer-link">服務項目</a></li>
+          <li><a href="about.html" class="footer-link">關於青禾</a></li>
+          <li><a href="contact.html" class="footer-link">聯絡訂購</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">作品分類</div>
+        <ul class="footer-links">
+          <li><a href="products.html" class="footer-link">婚禮花藝</a></li>
+          <li><a href="products.html" class="footer-link">手工花束</a></li>
+          <li><a href="products.html" class="footer-link">企業花禮</a></li>
+          <li><a href="products.html" class="footer-link">節慶花藝</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">聯絡我們</div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="footer-contact-text">台中市西區民生路 188 號</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="footer-contact-text">04-2328-5566</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="footer-contact-text"><a href="https://bridgeseqlab.com" class="footer-link" target="_blank" rel="noopener">設計：橋序創研</a></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 青禾花藝. All rights reserved.</p>
+      <p>Designed by <a href="https://bridgeseqlab.com" class="footer-link" target="_blank" rel="noopener">橋序創研 BridgeSeq Lab</a></p>
+    </div>
+  </div>
+</footer>
+<style>
+.cat-section{padding:clamp(56px,7vw,96px) 0;background:var(--bg)}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:32px}
+.cat-card{display:flex;flex-direction:column;background:var(--cream);border:1px solid #ece7da;border-radius:14px;overflow:hidden;text-decoration:none;transition:transform .4s,box-shadow .4s}
+.cat-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(42,92,49,.12)}
+.cat-card-img{aspect-ratio:4/3;overflow:hidden}
+.cat-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.cat-card:hover .cat-card-img img{transform:scale(1.06)}
+.cat-card-body{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.cat-card-body h3{font-family:"Noto Serif TC",serif;font-size:1.4rem;color:var(--primary-dark);margin-bottom:12px}
+.cat-card-body p{font-size:.92rem;color:var(--text-mid,#5a5a52);line-height:1.85;flex:1;margin-bottom:18px}
+.cat-card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #ece7da;padding-top:16px}
+.cat-price{color:var(--gold);font-weight:600;font-size:.95rem}
+.cat-more{color:var(--primary);font-size:.88rem}
+.cat-note{margin-top:40px;text-align:center;color:var(--text-mid,#5a5a52);font-size:.9rem}
+</style>
+<script src="js/main.js"></script>
+</body>
+</html>
